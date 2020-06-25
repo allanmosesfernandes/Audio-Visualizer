@@ -1,19 +1,23 @@
-    html {
-      margin: 0;
-      background: black;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-    canvas {
-      width: 100%;
-      height: 100%;
-    }
+html {
+    margin: 0;
+    background: black;
+}
 
-    body {
-      min-height: 100vh;
-      display: grid;
-      grid-template-rows: 300px 1fr;
-      margin: 0;
-    }
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .music-container {
     display: flex;
     background-color: #fff;
@@ -81,9 +85,11 @@
 }
 
 
-#prev,#next {
+#prev,
+#next {
     visibility: hidden;
 }
+
 .action-btn {
     background: #fff;
     border: 0;
@@ -101,7 +107,7 @@
 
 .action-btn.action-btn-big {
     font-size: 24px;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .music-info {
@@ -148,4 +154,14 @@
     height: 100%;
     border-radius: 5px;
     transition: width 0.1s linear;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .music-container {
+        width: 300px;
+    }
+
+
 }
